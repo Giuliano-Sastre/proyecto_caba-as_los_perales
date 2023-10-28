@@ -1,8 +1,8 @@
-/* chat gpt 4 */
+
 /* estilos.css */
 
 body {
-    background-color: #f4f5f7; /* Color claro para el fondo de toda la página */
+    background-color: #D5F5E3; /* Color claro para el fondo de toda la página */
     font-family: 'Arial', sans-serif;
 }
 
@@ -22,22 +22,30 @@ header {
 }
 
 /* Estilo para la navegación */
-nav {
-    display: flex; /* Hace que los enlaces dentro de la nav estén alineados horizontalmente */
-    
+/* Estilos para el logo en el encabezado */
+#logo {
+    float: left; /* Alinea el logo a la izquierda */
+    margin-right: 20px; /* Espacio a la derecha del logo */
+    max-width: 150px; /* Tamaño máximo de ancho */
+    max-height: 150px; /* Tamaño máximo de alto */
 }
 
-/* Estilo para los enlaces de la navegación */
-.linknav {
+/* Estilos para la navegación en el encabezado */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold; 
-    margin-left: 20px; /* Espacio entre cada enlace */
-    transition: color 0.3s;
-}
-
-.linknav:hover {
-    color: #007BFF;
+    color: #000; /* Color de los enlaces */
 }
 
 
@@ -58,18 +66,64 @@ smaller-text p {
 p {
     text-align: justify;
     text-justify: inter-word;
-    margin: 0;
+    margin: 10px;
     padding: 10px;
-    background-color: rgba(245, 246, 249, 0.8); /* Fondo blanco semitransparente para el texto */
+    background-color: #D5F5E3; /* Fondo verde claro semitransparente para el texto */
     border-radius: 15px; /* Bordes redondeados para las áreas de texto */
 }
 
+
+/* estilos main pag inicio*/
+main.container-fluid {
+    height: calc(100vh - alturaDelEncabezado - alturaDelPieDePagina); 
+    /* Reemplaza 'alturaDelEncabezado' y 'alturaDelPieDePagina' con las alturas correspondientes si las conoces. Si no, puedes ajustar manualmente la altura.*/
+}
+
+/* Para que la imagen grande y las imágenes pequeñas con su texto ocupen todo el espacio vertical */
+.row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegura que las imágenes ocupen todo el alto disponible */
+.img-fluid {
+    max-height: 100%;
+    width: auto;
+}
+
+/* Asegura que los contenedores de texto ocupen todo el espacio restante al lado de las imágenes */
+.col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Agrega scroll si el contenido de texto es demasiado */
+    justify-content: space-between;
+}
+
+/* Texto más pequeño para el segundo contenedor de texto */
+.smaller-text p {
+    font-size: 17px;
+}
+
+/* Para que sea responsive en pantallas pequeñas */
+@media (max-width: 767px) {
+    /* Las imágenes y textos se mostrarán uno debajo del otro en dispositivos pequeños */
+    .row > div, .col-6, .col-5 {
+        display: block;
+    }
+
+    /* Las imágenes ocuparán todo el ancho en dispositivos pequeños */
+    .img-fluid {
+        width: 100%;
+        max-height: none;
+    }
+}
 
 /* Estilo del contenedor principal del pie de página */
 footer {
     width: 100%;  /* Asegura que el footer ocupe todo el ancho de la página */
     padding: 20px;
-    background-color: #8d8888;
+    background-color: #524b4b;
     border-top: 1px solid #7e7c7c;
 }
 
