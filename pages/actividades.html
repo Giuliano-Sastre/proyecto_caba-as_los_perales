@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--comentario-->
+<html lang="es">
+    <head>
+        <!--las meta son estiqutas de configuacion 
+        en el head van las configuraciones -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividades</title>
+        <link rel="shortcut icon" href="../favicon.ico.png" type="image/x-ico">
+       <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+
+     </head>
+
+     <body class="actividades-pagina"> 
+        <!--va lo que ve el usuario
+        va el contenido de la pagina  -->
+        <header>
+            <!--cabecera. el logo siempre tiene que ir a la pag de inicio-->
+            <a href="../index.html">
+                <img src="../assets/img/logo9.png" alt="logo"style="max-width: 150px; max-height: 100px;">
+            </a>
+             
+            <nav>
+            
+                <!--el ancla es el hipervinculo-->
+            <ul> <!--lista desordenada -->
+                 <!--lista item-->
+                 <li> <a href="../index.html">INICIO</a></li>
+                 <li> <a href="./complejo.html">COMPLEJO</a></li>
+                 <li> <a href="./cabañas.html">CABAÑAS</a></li>
+                 <li> <a href="./actividades.html">ACTIVIDADES</a></li>
+                 <li> <a href="./contacto.html">CONTACTO</a></li>
+                 <!--target blanck se usa para enlaces externos, se abre en pestaña nueva 
+                 <li><a href="link pag como google " target="_blanck">google</a></li>-->
+            </ul>
+  
+               
+            </nav>
+        </header>
+        <main> 
+            <!--contenido principal  minimimo hay un h1 que es el titulo principal-->
+          
+            <section class="actividades">
+        
+                <!-- Gastronomía -->
+                <div class="actividad">
+                    <h2>Gastronomía</h2>
+                    <img src="../assets/img/gastronomia.jpg" alt="Imagen de Gastronomía">
+                    <p>Cabañas los Perales puede guiarte para que disfrutes la gastronomía de la zona según tu gusto y presupuesto.
+                         Nada mejor que buenas recomendaciones para descubrir los sabores de la cocina de montaña.</p>
+                </div>
+                
+                <!-- Turismo Aventura -->
+                <div class="actividad">
+                    <h2>Turismo y Aventura</h2>
+                    <img src="../assets/img/senderismo.jpg" alt="Imagen de Turismo Aventura">
+                    <p>Si la aventura está incluida en tu viaje consultá nuestra guía de proveedores de confianza 
+                        para que puedas rentar excursiones seguras e inolvidables.</p>
+                </div>
+                
+                <!-- camino de los artesanos -->
+                <div class="actividad">
+                    <h2>Camino de los Artesanos</h2>
+                    <img src="../assets/img/artesano.jpg" alt="Imagen del Camino de los artesanos">
+                    <p> Este pintoresco recorrido es una invitación a sumergirse en la esencia y tradición de la región. A lo largo de su recorrido,
+                         los visitantes se toparán con una amplia variedad de lugares que exponen la rica diversidad de artesanías de la zona.</p>
+                </div>
+                 
+        </main>
+           
+        <footer class="container-fluid bg-light"> <!-- Contenedor principal -->
+            <div class="row justify-content-center py-4"> <!-- Usando la grilla de Bootstrap -->
+        
+                <!-- Sección del Logo -->
+                <div class="col-md-3 footer-section d-flex flex-column align-items-center">
+                    
+                 
+                </div>
+        
+                <!-- Sección Sobre "Cabañas los Perales" -->
+                <div class="col-md-3 footer-section">
+                    <h3>Sobre "Cabañas los Perales"</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./actividades.html">Actividades recomendadas</a></li>                      
+                        <li><a href="./cabañas.html">Galeria de Imagenes</a></li>
+                        <li><a href="./contacto.html">Contactate con nosotros</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Sección de Planes y Servicios -->
+                <div class="col-md-3 footer-section">
+                    <h3>Planes y Servicios</h3>
+                    <ul>
+                        <li><a href="#">Servicio de Limpieza</a></li>
+                        <li><a href="#">Wi-Fi Gratuito</a></li>
+                        <li><a href="#">Estacionamiento Privado</a></li>
+                    </ul>
+                    <button class="btn btn-primary">Reserva Ahora</button> <!--nose como hacer que el buttom me lleve a la pagina de contacto -->
+                </div>
+        
+                <!-- Sección del contacto -->
+                <div class="col-md-3 footer-section">
+                    <h3>Contacto</h3>
+                    <address>
+                        Sede Huerta Grande, calle jujuy, Cordoba <br>
+                        <a href="https://www.instagram.com/cabanaslosperales/">Instagram: @cabanaslosperales</a>
+                    </address>
+                </div>
+        
+            </div>
+        </footer>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+         <script src="../js/bootstrap.bundle.min.js"> </script>
+    </body>
+</html>

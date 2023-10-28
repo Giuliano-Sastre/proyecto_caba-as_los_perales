@@ -1,0 +1,110 @@
+/* chat gpt 4 */
+/* estilos.css */
+
+body {
+    background-color: #f4f5f7; /* Color claro para el fondo de toda la página */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal para el encabezado */
+header {
+    display: flex; /* Establece el contenedor como flexbox para que sus hijos (logo y nav) estén alineados horizontalmente */
+    justify-content: space-between; /* Esto hará que el logo y la nav estén separados al máximo posible dentro del contenedor */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    padding: 10px 20px; /* Espacio alrededor del encabezado para darle un poco de respiro */
+}
+
+/* Estilo para el logo */
+.logo {
+    font-size: 24px; /* Tamaño del texto del logo, puedes ajustarlo según tus necesidades */
+    font-weight: bold;
+    margin-right: 20px; /* Espacio a la derecha del logo */
+}
+
+/* Estilo para la navegación */
+nav {
+    display: flex; /* Hace que los enlaces dentro de la nav estén alineados horizontalmente */
+    
+}
+
+/* Estilo para los enlaces de la navegación */
+.linknav {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; 
+    margin-left: 20px; /* Espacio entre cada enlace */
+    transition: color 0.3s;
+}
+
+.linknav:hover {
+    color: #007BFF;
+}
+
+
+.img-fluid {
+    width: 100%; /* Imágenes se adaptan al contenedor */
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Efecto de "zoom" cuando se pasa el ratón sobre las imágenes */
+}
+
+smaller-text p {
+    font-size: 0.85em;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(245, 246, 249, 0.8); /* Fondo blanco semitransparente para el texto */
+    border-radius: 15px; /* Bordes redondeados para las áreas de texto */
+}
+
+
+/* Estilo del contenedor principal del pie de página */
+footer {
+    width: 100%;  /* Asegura que el footer ocupe todo el ancho de la página */
+    padding: 20px;
+    background-color: #8d8888;
+    border-top: 1px solid #7e7c7c;
+}
+
+/* Estilo de cada sección del pie de página */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #007BFF;  /* Azul de Bootstrap */
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #0056b3;  /* Azul oscuro al pasar el cursor */
+}
+
+.footer-section button.btn {
+    margin-top: 10px;
+}
